@@ -50,6 +50,7 @@
                     <p>weboldalakat készítek, javítok, alakítok át.</p>
 
                     <p>A legkisebb módosításoktól kezdve, egy egyszerű bemutatkozó oldalon keresztül, a teljesen egyedi ügyviteli rendszerek készítéséig bármivel megkereshetsz.</p>
+                    <p>Legjobban azokat a munkákat szeretem, amiben van kihívás, és valós problémát oldanak meg. Váltsuk ki az excel táblákat a munkahelyeden, automatizáljuk a folyamataidat, legyen online rendelés az éttermedben, ilyesmi.</p>
                     <div class="hashtags">
                         #laravel #wordpress #joomla #webshop #woocommerce
                     </div>
@@ -70,18 +71,18 @@
                     <h2>Meddig tart?</h2>
                     <p>Ez mindig az adott feladattól függ.<br>
                         Van, hogy 15 perc alatt kész egy szerkesztés, de van, hogy órákig tart. <br>
-                        Egyedi oldalakra tól-ig határt adok, wordpress oldalak van hogy néhány óra alatt elkészülnek.
+                        Egyedi oldalakra tól-ig határt adok, wordpress oldalak van, hogy néhány óra alatt elkészülnek.
                     </p>
 
                     <h2>Mi az a sikerdíjas elszámolás?</h2>
                     <p>Azt jelenti, hogy csak akkor kell fizetned, ha sikerül megcsinálnom amit kértél.<br>
                         Ez hibajavításokra és az oldalad szerkesztésére vonatkozik, hisz én sem tudom előre, meddig fog tartani,<br>
                         illetve ki tudom-e javítani az adott hibát. Ha nem jártam sikerrel, nem kell fizetned egy forintot sem.<br>
-                        A sikerdíjas elszámolás weboldal készítésre nem vonatkozik, olyankor előleg megfizetése szükséges.
+                        A sikerdíjas elszámolás weboldal készítésre nem vonatkozik, ott szerződést kötünk, előleget kérek.
                     </p>
 
                     <h2>Tárhelyet is tudok bérelni?</h2>
-                    <p>Igen, külön szerződést köthetünk üzemeltetésről, mely tartalmazza a tárhelyet, havi karbantartást, biztonsági mentéseket. Sokan nem is tudják, hogy a weboldalak zöme mögött lévő PHP 5.6-os verziója van a tárhelyén, aminek támogatása már lejárt, így biztonsági kockázatot jelenthet. Ez egyben azt is magával vonja, hogy az új Wordpress, Joomla, Laravel rendszerek új verziói nem fogják támogatni a régi PHP 5.6-ot, így a saját rendszereket sem lehet majd frissen tartani. Ilyen és hasonló dolgok mind beletartoznak az üzemeltetésbe.
+                    <p>Igen, külön szerződést köthetünk üzemeltetésről, mely tartalmazza a tárhelyet, havi karbantartást, biztonsági mentéseket. Sokan nem is tudják például, hogy a weboldalaik mögött 5.6-os verziójú PHP van a tárhelyen, aminek támogatása már 2 hónapja lejárt, így biztonsági kockázatot jelenthet. Ez egyben azt is magával vonja, hogy az új Wordpress, Joomla, Laravel rendszerek friss verziói nem fogják támogatni a régi PHP 5.6-ot, így a saját rendszereket sem lehet majd frissen tartani. Egyelőre nem életbevágóan fontos ezzel foglalkozni, de a tárhely szolgáltatók hamarosan majd bejelentik, hogy már nem támogatják az 5.6-ot, te pedig majd ott ülsz a teljesen fehér weboldalad előtt, és nem érted, miért nem működik. Ilyen és hasonló dolgok mind beletartoznak az üzemeltetésbe.
                     </p>
                 </div>
             </div>
@@ -97,14 +98,16 @@
                     <h2>Mit használsz?</h2>
                     <p>Amikor valaki csak azért szeretne egy honlapot, hogy általa szerkeszthető módon fent legyenek pályázati anyagok, vagy cikkek, és nincs mögötte semmi bonyolult működés, akkor általában <b>Wordpress</b>t szoktam javasolni. Választunk egy ingyenes vagy prémium sablont, és ha megvan a tartalom amiből el lehet készíteni a szerkezetet, akár egy nap alatt kész a weboldal.</p>
                     <p>Főállásban a veszprémi Pannon Egyetemen vagyok programozó, ott <b>Joomla</b> tartalomkezelő rendszert használunk. Ugyanúgy mindent meg lehet csinálni benne, mint Wordpressben, én akkor szoktam javasolni, ha sok felhasználónak kell hozzáférést adni az admin felülethez, és össze-vissza állítgatni, hogy ki milyen funkciókhoz fér hozzá.</p>
-                    <p>Végül a kedvencem, az egyedi ügyviteli oldalak fejlesztése, ahol nem kell túlcsicsázni a dolgokat, sokkal inkább fontosabb az, ahogyan az általam készített weboldal megkönnyíti a mindennapi munkát. Ehhez <b>Laravel</b> keretrendszert használok, és még nem találkoztam olyan feladattal, amire ne lett volna alkalmas.</p>
+                    <p>Végül a kedvencem, az egyedi ügyviteli oldalak fejlesztése, ahol nem kell túlcsicsázni a dolgokat, sokkal fontosabb az, ahogyan az általam készített weboldal megkönnyíti a mindennapi munkát. Ehhez <b>Laravel</b> keretrendszert használok, és még nem találkoztam olyan feladattal, amire ne lett volna alkalmas. (Persze attól, hogy nem lesz agyon dizájnolva, még nem lesz csúnya! Általában AdminLTE felületet használok hozzá, <a href="https://adminlte.io/themes/AdminLTE/index2.html" target="_blank">itt megnézheted</a>.)</p>
 
                     <h2>Pár dolog amit kiemelnél?</h2>
-                    <p>A <b>bankkártyás fizetés</b> ma már relatív egyszerűen megvalósítható, ha az ember nem bankkal szerződik, hanem például a Barion szolgáltatóval. Ez egy elektronikus pénztárca, nagyon biztonságos, és ugyanúgy könyvelhető, mint egy hagyományos bankszámla.</p>
+                    <p>A <b>bankkártyás fizetés</b> ma már relatív egyszerűen megvalósítható, ha az ember nem bankkal szerződik, hanem például a Barion szolgáltatóval. Ez egy elektronikus pénztárca, nagyon biztonságos, és ugyanúgy könyvelhető, mint egy hagyományos bankszámla. Én ezt használom a webshopjaimban, és egyedi adománygyűjtő oldalakon is jól működik.</p>
+                    <p>Szinte minden nap tanulok valami újat. Csak azért mondom, hogy kérdezz körbe az ismerőseid között, hogy ők a saját munkájukban mennyire tartják a lépést a fejlődéssel? Ha programozásról van szó, aki kihagy 1 évet, annak vért kell izzadnia, hogy behozza a lemaradást. Tőlem mindenből a legfrissebb verziót kapod.</p>
                     <p>Ritkán van rá szükség, de előfordul, hogy <b>LDAP</b> adatbázist is használnia kell egy ügyfélnek, és ennek segítségével valósítanak meg központi beléptetést és azonosítást. Az egyetemen többek között ilyesmihez fejlesztettem rendszereket, itt jöttem rá, hogy nemigazán van olyan, amit ne tudnék megcsinálni.</p>
 
                     <h2>Drága...</h2>
-                    <p>Soknak tűnik az órabér? Múltkor kint volt a gázszerelő, 5 perc alatt megmondta, hogy 3 alkatrész romolhatott el, kezdjük a legolcsóbbal a cserét. Ez volt 4.500 kiszállás és 5 perc "hiba megállapítás". Megjött az alkatrész 1 hét múlva, megint kijött, 10 perc alatt kicserélte: 3.000 Ft kiszállás 14.000 Ft munkadíj. A számlán nem órabér szerepel, hanem szerelés 1 db. Nálam 10 perc 1.500 Ft.</p>
+                    <p>Soknak tűnik az órabér? Múltkor kint volt a gázszerelő, 5 perc alatt megmondta, hogy 3 alkatrész romolhatott el, kezdjük a legolcsóbbal a cserét. Ez volt 4.500 Ft, kiszállás és 5 perc "hiba megállapítás". Megjött az alkatrész 1 hét múlva, megint kijött, 10 perc alatt kicserélte: 3.000 Ft kiszállás 14.000 Ft munkadíj.</p>
+                    <p>Nálam 10 perc 1.500 Ft.</p>
                 </div>
             </div>
         </div>
