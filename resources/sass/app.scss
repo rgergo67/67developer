@@ -1,0 +1,191 @@
+
+// Fonts
+@font-face {
+  font-family: "manrope";
+  src: url("/fonts/manrope-bold.woff") format("woff");
+    font-weight: 600;
+}
+@font-face {
+  font-family: "manrope";
+  src: url("/fonts/manrope-extrabold.woff") format("woff");
+    font-weight: 900;
+}
+@font-face {
+  font-family: "manrope";
+  src: url("/fonts/manrope-light.woff") format("woff");
+    font-weight: 300;
+}
+@font-face {
+  font-family: "manrope";
+  src: url("/fonts/manrope-regular.woff") format("woff");
+    font-weight: 400;
+}
+@font-face {
+  font-family: "manrope";
+  src: url("/fonts/manrope-medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("/fonts/manrope-thin.woff") format("woff");
+    font-weight: 100;
+}
+
+.navbar-brand{
+    font-family: manrope;
+    font-weight: thin;
+}
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.bg-black{
+    background: $black;
+    color: #fff;
+    margin-bottom: 5rem;
+    padding: 10rem 0;
+    form{    
+        input, textarea{
+            display: block; 
+            margin-bottom: 1.5rem;
+            padding: 0.8rem;
+            width: 100%;
+        }    
+        input[type="text"]{
+        }
+        textarea{
+            height: 13rem;
+        }
+        .btn-red{
+            background: $red;
+            border: none;
+            color: #fff;
+        }
+    }
+    h2{
+        font-size: 3.7rem;
+        font-weight: 900;
+        margin: 0 0 2.5rem;
+    }
+}
+
+.box{
+    border-radius: 10px;
+    color: $red;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    padding: 2.5rem 0 2rem;
+    text-align: center;
+    &.bg-red{
+        background: $red;
+        color: #fff;
+    }
+    &.border-red{
+        border: 1px solid $red;
+    }
+    h3{
+        font-size: 3.1rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+    &.write-to-me{
+        cursor: pointer;
+        font-size: 2.5rem;
+        margin-bottom: 9rem;
+        padding: 1rem;
+        position: relative;
+        .arrow {
+            position: absolute;
+            bottom: 24px;
+            width: 20px;
+            height: 20px;
+            border-top: 4px solid #cc4224;
+            border-right: 4px solid #cc4224;
+            right: 50%;
+            left: 50%;
+            top: 6.5rem;
+        }
+
+        .down {
+            -moz-transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }  
+    }
+}
+
+.container, .container-fluid{
+    font-size: 2rem;
+}
+
+.ich{
+    img{
+        margin-bottom: -2px;
+    }
+}
+
+h1{
+    font-size: 4.4rem;
+    font-weight: 500;
+    margin: 4rem 0 8rem;
+    text-align: center;
+    small{
+        color: #676767;
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-top: 2rem;
+    }
+    .typed{
+        border-bottom: 8px solid $red;
+    }
+    .typed-cursor{
+        color: $red;
+    }
+}
+
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.questions, .technology{
+    h2{
+        font-size: 3.7rem;
+        font-weight: 900;
+        margin: 5rem 0 1rem;
+    }
+    p{    
+        background: rgba(255,255,255,0.8);
+        border-radius: 10px;
+        font-size: 2rem;
+        line-height: 4rem;
+        font-weight: 300;
+        b{
+            font-weight: bold;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .questions{
+        background-image: url(/img/weboldal-keszites.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 700px;
+    }
+}
