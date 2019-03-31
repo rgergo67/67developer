@@ -11,7 +11,7 @@ class ContactController extends Controller
 {
     public function send(Request $request)
     {
-        \Mail::to('rgergo67@gmail.com')->send(new Contact($request->input('email'), $request->input('message')));
+        \Mail::to('rgergo67@gmail.com')->send(new Contact($request->input('email'), $request->input('text')));
 
         Response::json(array('success' => true));
     }

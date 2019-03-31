@@ -28,7 +28,7 @@
             <div class="d-none d-lg-flex col-lg-4 offset-lg-2 ich align-items-end">
                 <img class="gergo" src="/img/gergo.svg">
             </div>
-        </div>        
+        </div>
     </div>
 
     <div class="bg-black" id="kapcsolat">
@@ -126,7 +126,7 @@
         type: "POST",
         data: $('#contact-form').serialize(),
         success: function( response ) {
-          $('.email-success').show()
+          $('.email-success').removeClass('d-none');
         }
       });
     });
