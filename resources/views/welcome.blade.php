@@ -78,7 +78,7 @@
                     <p>Azt jelenti, hogy csak akkor kell fizetned, ha sikerül megcsinálnom amit kértél.<br>
                         Ez hibajavításokra és az oldalad szerkesztésére vonatkozik, hisz én sem tudom előre, meddig fog tartani,<br>
                         illetve ki tudom-e javítani az adott hibát. Ha nem jártam sikerrel, nem kell fizetned egy forintot sem.<br>
-                        A sikerdíjas elszámolás weboldal készítésre nem vonatkozik, ott szerződést kötünk, előleget kérek.
+                        Weboldal készítésre is vonatkozik, ott egyedi szerződésben rögzítjük a pontos feltételeket.
                     </p>
 
                     <h2>Tárhelyet is tudok bérelni?</h2>
