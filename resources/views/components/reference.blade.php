@@ -3,7 +3,7 @@
         <div class="aspect-w-3 aspect-h-2">
             <img class="drop-shadow-lg object-cover rounded-lg " src="{{ $image }}" alt="">
         </div>
-        <div class="shadow-md shadow-retropurple-dark text-retrodark text-center bg-gradient-to-r from-retroyellow to-retropink text-lg leading-8 font-medium space-y-1">
+        <div class="shadow-md shadow-retropurple-dark text-retrodark text-center bg-gradient-to-r from-retroyellow to-retroyellow-dark text-lg leading-8 font-medium space-y-1">
             <h3>{{ $title }}</h3>
         </div>
         <div class="text-lg">

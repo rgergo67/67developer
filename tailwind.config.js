@@ -18,7 +18,10 @@ module.exports = {
           light: "#803599",
         },
         retropink: "#eb2eb9",
-        retroyellow: "#fbae01",
+        retroyellow: {
+          dark: "#f57a4c",
+          DEFAULT: "#fbae01",
+        },
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],

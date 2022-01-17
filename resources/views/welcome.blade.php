@@ -11,23 +11,23 @@
                                     <div class="lg:py-24">
                                         <a href="/#referencia" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
                                             <span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full">Referenciák</span>
-                                            <span class="ml-4 text-sm">pörgesd végig</span>
+                                            <span class="ml-4 text-sm">1-2 példa</span>
                                             <!-- Heroicon name: solid/chevron-right -->
                                             <svg class="ml-2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                                             </svg>
                                         </a>
-                                        <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-5xl xl:leading-[1.2]">
+                                        <h1 class="mt-6 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-5xl xl:leading-[1.2]">
                                             <span class="block">Gergő vagyok,</span>
-                                            <span class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">rendszer fejlesztő</span>
+                                            <span class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">programozó</span>
                                         </h1>
-                                        <div class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-                                            <p>Elavult rendszereket korszerüsítek, unalmas excel és papír alapú folyamatokat digitalizálok és optimalizálok.</p>
+                                        <div class="mt-4 text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
+                                            <p>Elavult, lassú, hibásan működő weboldalakat és rendszereket javítok, teszek ismét korszerűvé és villámgyorssá.</p>
                                             <p class="mt-4">Legyenek a folyamataid gyorsak, modernek, hatékonyak!</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
+                                <div class="mt-12 lg:m-0 lg:relative">
                                     <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
                                         <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
                                         <img class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="{{ asset('images/67developer-header.svg') }}" alt="">
@@ -46,7 +46,7 @@
                             Keress bátran, ha...
                         </p>
                         <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                            ... egyéni vállalkozásod van, nonprofit szervezetben dolgozol, vagy nagyvállalatot vezetsz. Ha elég érdekes a feladat és valamilyen szinten a világ is jobb hely lesz tőle, biztosan el fogom vállalni.
+                            ... egyéni vállalkozásod van, nonprofit szervezetben dolgozol, vagy nagyvállalatot vezetsz. Ha elég érdekes a feladat, el fogom vállalni.
                         </p>
                         <div class="mt-12">
                             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -84,7 +84,7 @@
                                             </div>
                                             <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Weboldal korszerüsítés</h3>
                                             <div class="mt-5 text-base text-gray-500">
-                                                <p>Lassú, évek óta nem frissített rendszereket javítok, optimalizálok, teszek villámgyorssá és biztonságossá.</p>
+                                                <p>Lassú, évek óta nem frissített webes rendszereket javítok, optimalizálok, teszek villámgyorssá és biztonságossá.</p>
                                                 <p class="mt-4 italic">"A tervező nem akkor tudja, hogy tökéleteset alkotott, ha már nincs mit hozzátenni, hanem ha nincs mit elvenni."</p>
                                             </div>
                                         </div>
@@ -122,14 +122,14 @@
                     <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                         <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
                             <div class="space-y-5 sm:space-y-4">
-                                <h2 id="referencia" class="bg-clip-text text-transparent bg-gradient-to-r from-retroyellow to-retropink text-3xl font-extrabold tracking-tight sm:text-4xl">Referencia</h2>
+                                <h2 id="referencia" class="inline-flex bg-clip-text text-transparent bg-gradient-to-r from-retroyellow to-retroyellow-dark text-3xl font-extrabold tracking-tight sm:text-4xl">Referencia</h2>
                                 <p class="text-xl text-gray-300">Leggyakrabban belső ügyviteli rendszereket fejlesztek, így nem tudom őket közvetlenül megmutatni, de olyan is akad, amit meg tudsz nézni.</p>
                             </div>
                             <div class="lg:col-span-2">
                                 <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
                                     <x-reference title="Pannon Egyetem"
                                                  image="{{ asset('images/referencia/pannon.jpg') }}">
-                                        Több ezer diák, dolgozó és partner adatainak és jogosultságainak kezelése, M365 és LDAP szinkronizáció, és rengeteg egyedi fejlesztés, kihívás.
+                                        Több ezer diák, dolgozó és partner adatainak és jogosultságainak automatizált kezelése, M365 és LDAP szinkronizáció, és rengeteg egyedi fejlesztés, kihívás.
                                     </x-reference>
 
                                     <x-reference title="Akzonobel festékgyár"
@@ -172,10 +172,10 @@
                             </div>
                             <div class="flow-root self-center mt-8 lg:mt-0">
                                 <div class="-mt-4 -ml-8 flex flex-wrap justify-around lg:-ml-4">
-                                    <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
+                                    <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:justify-center lg:flex-grow-0 lg:ml-4">
                                         <img class="h-12" src="{{ asset('images/laravel-logo.svg') }}" alt="Workcation">
                                     </div>
-                                    <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center items-center lg:flex-grow-0 lg:ml-4">
+                                    <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:justify-center items-center lg:flex-grow-0 lg:ml-4">
                                         <img class="h-8" src="{{ asset('images/tailwind-css-logo.svg') }}" alt="Tuple">
                                     </div>
                                 </div>
@@ -196,7 +196,7 @@
                             <h2 id="kapcsolat" class="text-base font-semibold uppercase tracking-wider text-white">
                                 Kapcsolat
                             </h2>
-                            <p class="mt-2 bg-clip-text text-transparent bg-gradient-to-r from-retroyellow to-retropink text-3xl font-extrabold tracking-tight sm:text-4xl">
+                            <p class="inline-flex mt-2 bg-clip-text text-transparent bg-gradient-to-r from-retroyellow to-retroyellow-dark text-3xl font-extrabold tracking-tight sm:text-4xl">
                                 Keress bátran
                             </p>
                             <p class="mt-3 text-lg text-gray-300">
@@ -204,7 +204,7 @@
                             </p>
                             <div class="mt-8">
                                 <div class="inline-flex rounded-md shadow">
-                                    <a href="mailto:rgergo67@gmail.com" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-gradient-to-r from-retroyellow to-retropink hover:bg-gray-50">
+                                    <a href="mailto:rgergo67@gmail.com" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-gradient-to-br from-retroyellow to-retroyellow-dark hover:bg-gray-50">
                                         rgergo67@gmail.com
                                     </a>
                                 </div>

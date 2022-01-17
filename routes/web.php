@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => ['page-cache']], function () {
+    Route::view('/', 'welcome')->name('welcome');
+    Route::view('credits', 'credits')->name('credits');
 });
-
-Route::view('credits', 'credits')->name('credits');
