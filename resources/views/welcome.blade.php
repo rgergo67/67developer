@@ -173,10 +173,10 @@
                             <div class="flow-root self-center mt-8 lg:mt-0">
                                 <div class="-mt-4 -ml-8 flex flex-wrap justify-around lg:-ml-4">
                                     <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:justify-center lg:flex-grow-0 lg:ml-4">
-                                        <img class="h-12" src="{{ asset('images/laravel-logo.svg') }}" alt="Workcation">
+                                        <img class="h-12" src="{{ asset('images/laravel-logo.svg') }}" width="176" height="51" alt="Laravel">
                                     </div>
                                     <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:justify-center items-center lg:flex-grow-0 lg:ml-4">
-                                        <img class="h-8" src="{{ asset('images/tailwind-css-logo.svg') }}" alt="Tuple">
+                                        <img class="h-8" src="{{ asset('images/tailwind-css-logo.svg') }}" width="606" height="78" alt="Tailwindcss">
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@
                 <!-- CTA Section -->
                 <div class="relative bg-gradient-to-br from-black to-retropurple-dark">
                     <div class="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-                        <img class="w-full h-full object-cover" src="{{ asset('images/contact.jpg') }}" alt="">
+                        <x-picture class="w-full h-full object-cover" src="{{ asset('images/contact.jpg') }}" alt="67developer programozás" width="1200" height="480" />
                         <div aria-hidden="true" class="absolute inset-0"></div>
                     </div>
                     <div class="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">

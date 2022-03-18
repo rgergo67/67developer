@@ -1,8 +1,6 @@
 <li class="shadow-lg shadow-retropurple py-10 px-6 bg-retrodark text-center rounded-lg xl:px-10 xl:text-left border border-retroyellow border-2 flex flex-col justify-between space-y-4 relative">
     <div class=" space-y-4">
-        <div class="aspect-w-3 aspect-h-2">
-            <img class="drop-shadow-lg object-cover rounded-lg " src="{{ $image }}" alt="">
-        </div>
+        <x-picture picture-class="aspect-w-3 aspect-h-2 block" class="drop-shadow-lg object-cover rounded-lg" src="{{ $image }}" alt="{{ $title }}" width="300" height="200" />
         <div class="shadow-md shadow-retropurple-dark text-retrodark text-center bg-gradient-to-r from-retroyellow to-retroyellow-dark text-lg leading-8 font-medium space-y-1">
             <h3>{{ $title }}</h3>
         </div>

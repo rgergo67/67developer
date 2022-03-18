@@ -5,7 +5,7 @@
                 <div class="flex items-center justify-between w-full md:w-auto">
                     <a href="/">
                         <span class="sr-only">Workflow</span>
-                        <img class="h-8 w-auto sm:h-10" src="{{ asset('images/67developer-logo.svg') }}" alt="67developer logo">
+                        <img class="h-8 w-auto sm:h-10" src="{{ asset('images/67developer-logo.svg') }}" width="143" height="258" alt="67developer logo">
                     </a>
                     <div class="-mr-2 flex items-center md:hidden">
                         <button type="button" class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false" :aria-expanded="open.toString()" @click="open=true">
