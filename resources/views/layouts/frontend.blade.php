@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>67developer programozás</title>
-    <meta name="description" content="Elavult, lassú, hibásan működő weboldalakat és rendszereket javítok, teszek ismét korszerűvé és villámgyorssá.">
+    <title>{{ __('67developer programozás') }}</title>
+    <meta name="description" content="{{ __('Elavult, lassú, hibásan működő weboldalakat és rendszereket javítok, teszek ismét korszerűvé és villámgyorssá.') }}">
 
-    <meta property="og:site_name" content="67developer programozás">
+    <meta property="og:site_name" content="{{ __('67developer programozás') }}">
     <meta property="og:url" content="{{ request()->fullUrl() }}">
     <meta property="og:type" content="article">
 

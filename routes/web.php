@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['page-cache']], function () {
     Route::view('/', 'welcome')->name('welcome');
+    Route::view('/en', 'welcome')->middleware('english')->name('welcome-en');
     Route::view('credits', 'credits')->name('credits');
 });

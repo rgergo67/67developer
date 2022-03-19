@@ -9,21 +9,18 @@
                 {{ $slot }}
             </div>
         </div>
+
+        @isset($badges)
+        <div class="flex flex-wrap gap-3">
+            {{ $badges }}
+        </div>
+        @endisset
     </div>
     <div class="flex justify-between items-center">
         @isset($link)
-            <div class="bg-retroyellow text-retrodark shadow-sm shadow-retroyellow rounded-full py-1 px-2 italic font-bold text-sm">
-                <a href="{{ $link }}" target="_blank">
-                    Link
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                </a>
-            </div>
-            @else
-            <div></div>
+            <a href="{{ $link }}" target="_blank">
+                <span aria-hidden="true" class="absolute inset-0"></span>
+            </a>
         @endisset
-        <div class="bg-retrodark-dark rounded-full p-2 flex space-x-4">
-            <button type="button" class="gameboy-button rounded-full w-10 h-10 bg-retroyellow text-retrodark flex items-center justify-center font-bold">A</button>
-            <button type="button" class="gameboy-button rounded-full w-10 h-10 bg-retroyellow text-retrodark flex items-center justify-center font-bold">B</button>
-        </div>
     </div>
 </li>

@@ -14,8 +14,9 @@
         "silber/page-cache": "^1.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.7",
+        "amirami/localizator": "^0.9.0@alpha",
         "fakerphp/faker": "^1.9.1",
+        "friendsofphp/php-cs-fixer": "^3.7",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
@@ -47,6 +48,12 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "sniff": [
+            "./vendor/bin/php-cs-fixer fix -vvv --dry-run --show-progress=dots"
+        ],
+        "lint": [
+            "./vendor/bin/php-cs-fixer fix -vvv --show-progress=dots"
         ]
     },
     "extra": {
