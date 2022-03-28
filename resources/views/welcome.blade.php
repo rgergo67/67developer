@@ -128,7 +128,7 @@
                                                  image="{{ asset('images/referencia/pannon.jpg') }}">
                                         <p>{{ __('Több ezer diák, dolgozó és partner adatainak és jogosultságainak automatizált kezelése, M365 és LDAP szinkronizáció, és rengeteg egyedi fejlesztés, kihívás.') }}</p>
                                         <ul class="mt-2">
-                                            <li><a href="https://balatonakademia.uni-pannon.hu" target="_blank" class="text-retroyellow">Balaton Akadémia</a></li>
+                                            <li><a href="https://balatoninyariegyetem.uni-pannon.hu" target="_blank" class="text-retroyellow">Balatoni Nyári Egyetem</a></li>
                                             <li><a href="https://felveteli.uni-pannon.hu" target="_blank" class="text-retroyellow">Felvételi</a></li>
                                         </ul>
                                     </x-reference>
