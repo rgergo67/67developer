@@ -38,8 +38,7 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @stack('template_linked_css')
 </head>
-<body>
-    <div class="font-sans text-gray-900 antialiased">
+<body class="font-sans text-gray-900 antialiased">
 
     {{ $slot }}
 

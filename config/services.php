@@ -14,6 +14,14 @@ return [
     |
     */
 
+    'google-ads' => [
+        'client-pub' => env('GOOGLE_ADS_CLIENT_PUB'),
+    ],
+
+    'google-analytics' => [
+        'id' => env('GOOGLE_ANALYTICS_ID'),
+    ],
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
