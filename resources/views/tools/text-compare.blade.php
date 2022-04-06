@@ -11,7 +11,7 @@
         <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             <div class="pb-5 border-b border-gray-200">
                 <h3 class="text-lg leading-6 font-medium text-gray-900">{{ __('Ingyenes online szöveg összehasonlító') }}</h3>
-                <p class="mt-2 max-w-4xl text-sm text-gray-500">Workcation is a property rental website. Etiam ullamcorper massa viverra consequat, consectetur id nulla tempus. Fringilla egestas justo massa purus sagittis malesuada.</p>
+                <p class="mt-2 max-w-4xl text-sm text-gray-500">{{ __('Az online szövegösszehasonlító segítségével két szöveget tudsz összehasonlítani egymással. Illeszd be a két szöveget a lenti mezőkbe, majd kattints az Összehasonlítás gombra.') }}</p>
             </div>
         </div>
 
@@ -21,13 +21,13 @@
                 <div>
                     <label for="text1" class="block text-sm font-medium text-gray-700">{{ __('Ezt a szöveget hasonlítom össze') }}</label>
                     <div class="mt-1">
-                        <textarea rows="4" name="text1" id="text1" class="shadow-sm focus:ring-retrodark focus:border-retrodark block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
+                        <textarea rows="10" name="text1" id="text1" class="shadow-sm focus:ring-retrodark focus:border-retrodark block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
                     </div>
                 </div>
                 <div>
                     <label for="text2" class="block text-sm font-medium text-gray-700">{{ __('Ezzel a szöveggel') }}</label>
                     <div class="mt-1">
-                        <textarea rows="4" name="text2" id="text2" class="shadow-sm focus:ring-retrodark focus:border-retrodark block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
+                        <textarea rows="10" name="text2" id="text2" class="shadow-sm focus:ring-retrodark focus:border-retrodark block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,11 @@
                     {{ __('Próbáld ki további ingyenes online eszközeinket!') }}
                 </p>
             </div>
-            <a href="{{ route('tools.text-compare-' . app()->getLocale()) }}"></a>
+            @if (app()->getLocale() == 'hu')
+                <a href="{{ route('tools.text-compare-en') }}">Switch to english</a>
+            @else
+                <a href="{{ route('tools.text-compare-hu') }}">Váltás magyar verzióra</a>
+            @endif
         </div>
     </main>
 
