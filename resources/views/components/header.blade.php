@@ -23,7 +23,7 @@
 
                         <a href="/#referencia" class="text-base font-medium text-white hover:text-gray-300">{{ __('Referencia') }}</a>
 
-                        <a href="/#technologia" class="text-base font-medium text-white hover:text-gray-300">{{ __('Technologia') }}</a>
+                        <a href="/#technologia" class="text-base font-medium text-white hover:text-gray-300">{{ __('Technológia') }}</a>
 
                         <a href="/#kapcsolat" class="text-base font-medium text-white hover:text-gray-300">{{ __('Kapcsolat') }}</a>
                     </div>
