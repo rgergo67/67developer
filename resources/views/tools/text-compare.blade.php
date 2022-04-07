@@ -51,11 +51,6 @@
                     {{ __('Próbáld ki további ingyenes online eszközeinket!') }}
                 </p>
             </div>
-            @if (app()->getLocale() == 'hu')
-                <a href="{{ route('tools.text-compare-en') }}">Switch to english</a>
-            @else
-                <a href="{{ route('tools.text-compare-hu') }}">Váltás magyar verzióra</a>
-            @endif
         </div>
     </main>
 

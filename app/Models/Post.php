@@ -2,33 +2,23 @@
 
 namespace App\Models;
 
-use Filament\Models\Contracts\FilamentUser;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Str;
 
-class User extends Authenticatable implements FilamentUser
+class Post extends Model
 {
-    use HasApiTokens;
-    use HasFactory;
-    use Notifiable;
-
     /*
     |--------------------------------------------------------------------------
     | GLOBAL VARIABLES
     |--------------------------------------------------------------------------
     */
 
-    protected $fillable = [];
-
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
-
-    protected $casts = [
-        'email_verified_at' => 'datetime',
+    protected $fillable = [
+        'title',
+        'body',
+        'excerpt',
+        'language',
     ];
 
     /*
@@ -37,9 +27,11 @@ class User extends Authenticatable implements FilamentUser
     |--------------------------------------------------------------------------
     */
 
-    public function canAccessFilament(): bool
+    protected static function booted()
     {
-        return $this->email == 'rgergo67@gmail.com';
+        static::saved(function ($user) {
+            Artisan::call('page-cache:clear');
+        });
     }
 
     /*
@@ -59,6 +51,11 @@ class User extends Authenticatable implements FilamentUser
     | ACCESORS
     |--------------------------------------------------------------------------
     */
+
+    public function getSlugAttribute(): string
+    {
+        return Str::slug($this->title);
+    }
 
     /*
     |--------------------------------------------------------------------------

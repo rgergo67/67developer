@@ -37,6 +37,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @stack('template_linked_css')
+    <x-google-analytics />
+    <x-google-ads />
 </head>
 <body class="font-sans text-gray-900 antialiased">
 
