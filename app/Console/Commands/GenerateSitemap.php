@@ -41,5 +41,7 @@ class GenerateSitemap extends Command
         $sitemapUrl = config('app.url').'/sitemap.xml';
         Http::get('https://www.google.com/ping?sitemap='.$sitemapUrl);
         Http::get('https://www.bing.com/ping?siteMap='.$sitemapUrl);
+
+        return 0;
     }
 }

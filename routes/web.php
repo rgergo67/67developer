@@ -33,3 +33,9 @@ Route::get('language/{lang}', function ($lang) {
 
     return back();
 })->name('langroute');
+
+Route::get('en', function () {
+    Cookie::queue('locale', 'en', 60 * 24 * 365);
+
+    return redirect('/');
+});
