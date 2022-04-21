@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="relative px-4 sm:px-6 lg:px-8">
-            <div class="text-lg max-w-prose mx-auto">
+            <div class="text-lg max-w-4xl mx-auto">
                 <h1>
                     <span class="block text-base text-center text-cyan-600 font-semibold tracking-wide uppercase">Ratting Gergely</span>
                     <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -50,8 +50,8 @@
                     {!! $post->excerpt !!}
                 </p>
             </div>
-            <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-                <x-markdown>{!! $post->body !!}</x-markdown>
+            <div class="mt-6 prose prose-indigo prose-lg max-w-4xl text-gray-500 mx-auto">
+                {!! Str::markdown($post->body) !!}
 
                 <div class="text-center">
                     <a href="{{ route('posts.index') }}">{{ __('Vissza a cikkekhez') }}</a>
@@ -59,4 +59,11 @@
             </div>
         </div>
     </div>
+
+    @push('header-css')
+        <link rel="stylesheet" href="/css/prism.css">
+    @endpush
+    @push('footer-scripts')
+        <script src="/js/prism.js"></script>
+    @endpush
 </x-tools-layout>
