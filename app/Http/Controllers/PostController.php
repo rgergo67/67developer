@@ -10,7 +10,7 @@ class PostController extends Controller
     public function index(): View
     {
         return view('posts.index', [
-            'posts' => Post::where('language', app()->getLocale())->simplePaginate(1),
+            'posts' => Post::orderBy('id', 'desc')->simplePaginate(10),
         ]);
     }
 
