@@ -5,7 +5,6 @@ set -o allexport
 source .env
 set +o allexport
 
-home="/data/sites/$deployId/$deployId"
 yel=$'\e[1;33m'
 end=$'\e[0m'
 echo "Password for ${yel}${DEPLOY_SERVER}${end}:"
