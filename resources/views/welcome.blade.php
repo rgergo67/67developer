@@ -142,16 +142,15 @@
                                         </x-slot>
                                     </x-reference>
 
-                                    <x-reference title="Mancsmeg.hu"
-                                                 link="https://mancsmeg.hu"
-                                                 image="{{ asset('images/referencia/mancsmeg.png') }}">
-                                        <p>{{ __('Saját nonprofit projekt, örökbefogadható állatok országos adatbázisa.') }}</p>
+                                    <x-reference title="Mohacshaziorvos.hu"
+                                                 link="https://mohacshaziorvos.hu"
+                                                 image="{{ asset('images/referencia/mohacshaziorvos.png') }}">
+                                        <p>{{ __('Háziorvos weboldal elkészítése, üzemeltetése, tartalomfeltöltés') }}</p>
 
                                         <x-slot name="badges">
-                                            <x-badge>Forge</x-badge>
-                                            <x-badge>LaravelBackpack</x-badge>
-                                            <x-badge>TailwindCss</x-badge>
-                                            <x-badge>AlpineJs</x-badge>
+                                            <x-badge>Wordpress</x-badge>
+                                            <x-badge>Tárhely szolgáltatás</x-badge>
+                                            <x-badge>Weboldal üzemeltetés</x-badge>
                                         </x-slot>
                                     </x-reference>
 
@@ -185,7 +184,7 @@
                                     {{ __('Ezeket használom') }}
                                 </p>
 
-                                <p class="text-xl mt-3 text-gray-800">Laravel, TailwindCSS, AlpineJs, Livewire, DigitalOcean, Ubuntu, Nginx, Apache, MariDB, Redis, Joomla, WordPress, LDAP, RabbitMQ. {{ __('Ezen túl bármibe szívesen beleásom magam néhány nap vagy hét alatt.') }}</p>
+                                <p class="text-xl mt-3 text-gray-800">Laravel, TailwindCSS, AlpineJs, Livewire, DigitalOcean, Ubuntu, Nginx, Apache, MariDB, Redis, Joomla, WordPress, Woocommerce, LDAP, RabbitMQ. {{ __('Ezen túl bármibe szívesen beleásom magam néhány nap vagy hét alatt.') }}</p>
                             </div>
                             <div class="flow-root self-center mt-8 lg:mt-0">
                                 <div class="-mt-4 -ml-8 flex flex-wrap justify-around lg:-ml-4">
