@@ -5,22 +5,22 @@
 
     RewriteEngine On
 
+    RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+    RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
     # Serve Cached Page If Available...
-    RewriteCond %{HTTP_HOST} !^67developer.local.hu$
-    RewriteCond %{HTTP_HOST} !^67developer2.locale.hu$
+    RewriteCond %{HTTP_HOST} !^67developer.test$
     RewriteCond %{REQUEST_URI} ^/?$
     RewriteCond %{DOCUMENT_ROOT}/page-cache/pc__index__pc.html -f
     RewriteRule .? page-cache/pc__index__pc.html [L]
-    RewriteCond %{HTTP_HOST} !^67developer.local.hu$
-    RewriteCond %{HTTP_HOST} !^67developer2.locale.hu$
+    RewriteCond %{HTTP_HOST} !^67developer.test$
     RewriteCond %{DOCUMENT_ROOT}/page-cache%{REQUEST_URI}.html -f
     RewriteRule . page-cache%{REQUEST_URI}.html [L]
-    RewriteCond %{HTTP_HOST} !^67developer.local.hu$
-    RewriteCond %{HTTP_HOST} !^67developer2.locale.hu$
+    RewriteCond %{HTTP_HOST} !^67developer.test$
     RewriteCond %{DOCUMENT_ROOT}/page-cache%{REQUEST_URI}.json -f
     RewriteRule . page-cache%{REQUEST_URI}.json [L]
 
