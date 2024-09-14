@@ -11,7 +11,6 @@
             <div>
                 <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">{{ __('Egy egyetemi webmester fejlődése') }}</h2>
                 <div class="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center">
-                    <p class="text-xl text-gray-500">{{ __('Mindennapi problémák és megoldásuk egy egyetemi webmester szemüvegén keresztül.') }}</p>
                 </div>
             </div>
             <div class="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
