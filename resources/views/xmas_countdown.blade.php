@@ -156,8 +156,10 @@
         let nextChristmasDate = nextChristmasYear + '-12-25T00:00:00.000Z';
         let christmasDay = new Date(nextChristmasDate);
 
-        //Get the difference in seconds between the two days.
-        let diffSeconds = Math.floor((christmasDay.getTime() - now.getTime()) / 1000);
+        // this helps to create utc time
+        let timezoneOffset = christmasDay.getTimezoneOffset() * 60000;
+        // Get the difference in seconds between the two days.
+        let diffSeconds = Math.floor((christmasDay.getTime() + timezoneOffset - now.getTime()) / 1000);
 
         let d = 0;
         let h = 0;
