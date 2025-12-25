@@ -2,11 +2,19 @@
 
 namespace App\Filament\Resources;
 
+use Filament\Schemas\Schema;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\MarkdownEditor;
+use Filament\Tables\Columns\TextColumn;
+use App\Filament\Resources\PostResource\Pages\ListPosts;
+use App\Filament\Resources\PostResource\Pages\CreatePost;
+use App\Filament\Resources\PostResource\Pages\EditPost;
 use App\Filament\Resources\PostResource\Pages;
 use App\Filament\Resources\PostResource\RelationManagers;
 use App\Models\Post;
 use Filament\Forms;
-use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables\Table;
 use Filament\Tables;
@@ -15,20 +23,20 @@ class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
-                Forms\Components\TextInput::make('title')
+        return $schema
+            ->components([
+                TextInput::make('title')
                     ->required()
                     ->maxLength(255)
                     ->columnSpan([
                         'sm' => 2,
                         '2xl' => 1,
                     ]),
-                Forms\Components\Select::make('language')
+                Select::make('language')
                     ->required()
                     ->options([
                         'hu' => 'hu',
@@ -39,13 +47,13 @@ class PostResource extends Resource
                         'sm' => 2,
                         '2xl' => 1,
                     ]),
-                Forms\Components\Textarea::make('excerpt')
+                Textarea::make('excerpt')
                     ->required()
                     ->maxLength(65535)
                     ->columnSpan([
                         'sm' => 2,
                     ]),
-                Forms\Components\MarkdownEditor::make('body')
+                MarkdownEditor::make('body')
                     ->required()
                     ->maxLength(65535)
                     ->fileAttachmentsDisk('public')
@@ -61,9 +69,9 @@ class PostResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title'),
-                Tables\Columns\TextColumn::make('language'),
-                Tables\Columns\TextColumn::make('created_at')
+                TextColumn::make('title'),
+                TextColumn::make('language'),
+                TextColumn::make('created_at')
                     ->dateTime('Y-m-d'),
             ])
             ->filters([
@@ -81,9 +89,9 @@ class PostResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListPosts::route('/'),
-            'create' => Pages\CreatePost::route('/create'),
-            'edit' => Pages\EditPost::route('/{record}/edit'),
+            'index' => ListPosts::route('/'),
+            'create' => CreatePost::route('/create'),
+            'edit' => EditPost::route('/{record}/edit'),
         ];
     }
 }
