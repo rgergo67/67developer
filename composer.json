@@ -5,8 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
-        "doctrine/dbal": "^3.3",
+        "php": "^8.4",
         "filament/filament": "^3.2",
         "guzzlehttp/guzzle": "^7.0.1",
         "jfcherng/php-diff": "^6.11",
@@ -18,7 +17,6 @@
         "spatie/laravel-sitemap": "^7.0"
     },
     "require-dev": {
-        "amirami/localizator": "^0.13",
         "fakerphp/faker": "^1.9.1",
         "filament/upgrade": "^3.2",
         "friendsofphp/php-cs-fixer": "^3.7",
