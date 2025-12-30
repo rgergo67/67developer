@@ -35,7 +35,7 @@
     </noscript>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @vite('resources/css/app.css')
     @stack('template_linked_css')
     <x-google-analytics />
     <x-google-ads />

@@ -20,7 +20,7 @@
 
     <meta name="robots" content="noindex, nofollow" />
 
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @vite('resources/css/app.css')
     @stack('header-css')
     <x-google-analytics />
     <x-google-ads />
@@ -30,7 +30,7 @@
     {{ $slot }}
 
     <x-footer />
-    <script src="{{ mix('js/app.js') }}"></script>
+    @vite('resources/js/app.js')
     @stack('footer-scripts')
 </body>
 </html>
