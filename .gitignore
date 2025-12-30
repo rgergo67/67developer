@@ -1,6 +1,5 @@
 /node_modules
 /public/hot
-/public/build
 /public/page-cache
 /public/storage
 /storage/*.key
