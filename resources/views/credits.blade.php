@@ -2,7 +2,7 @@
     <div class="bg-white">
         <div class="relative overflow-hidden">
             <main>
-                <div class="bg-gradient-to-r from-black via-retropurple-dark to-retropurple-light bg-gradient-to-br pb-6">
+                <div class="bg-linear-to-r from-black via-retropurple-dark to-retropurple-light bg-linear-to-br pb-6">
                     <x-header />
                 </div>
             </main>
