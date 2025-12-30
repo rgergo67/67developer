@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import tailwindcss from '@tailwindcss/vite';
+import fs from 'fs';
 
+const host = '67developer.test';
 export default defineConfig({
     plugins: [
         laravel({
@@ -10,5 +13,14 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+        tailwindcss(),
     ],
+    server: {
+        host,
+        hmr: { host },
+        https: {
+            key: fs.readFileSync(`/etc/ssl/local/${host}.key`),
+            cert: fs.readFileSync(`/etc/ssl/local/${host}.crt`),
+        },
+    }
 });

@@ -173,7 +173,7 @@
 
 
                 <!-- This example requires Tailwind CSS v2.0+ -->
-                <div class="bg-indigo-200 bg-opacity-25">
+                <div class="bg-indigo-200/25">
                     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                         <div class="lg:grid lg:grid-cols-2 lg:gap-8">
                             <div class="lg:col-span-1">
